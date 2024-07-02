@@ -15,7 +15,7 @@ node_exporter
 
 - Make file service
 ```angular2html
-nano /etc/systemd/system/node-exporter.service
+nano /etc/systemd/system/node_exporter.service
 ```
 
 - Add content
@@ -37,13 +37,13 @@ WantedBy=multi-user.target
 - Start service
 ```angular2html
 systemctl daemon-reload
-systemctl start node-exporter
-systemctl status node-exporter
+systemctl start node_exporter
+systemctl status node_exporter
 ```
 
 - Enable service
 ```angular2html
-systemctl enable node-exporter
+systemctl enable node_exporter
 ```
 
 # Mysql Exporter Install
